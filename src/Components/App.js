@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 // form部分のcomponentの呼び出し
 import SearchForm from './SearchForm';
+import Result from './Result';
+
+
 class App extends Component{
   // 呼び出された時に作られる
   constructor(props){
@@ -23,6 +26,14 @@ class App extends Component{
 
       {/* importしたcomponentを出力 onClickイベントを設置 */}
       <SearchForm onSubmit={place => this.handlePlaceSubmit(place) } />
+
+      {/*  */}
+      <Result
+        address={this.state.address}
+        lat={this.state.lat}
+        lng={this.state.lng}
+      />
+
     </div>
     );
   }
