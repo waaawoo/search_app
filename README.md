@@ -68,3 +68,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# 機能概要
+Google マップAPIを使って
+検索した場所の
+住所
+緯度
+経度
+を出力する
+
+## コンポーネント設計
+ ----APP---
+|searchForm|
+|Result    |
+ ----------
+
+### searchForm
+input
+検索ボタン
+
+### Result
+住所
+経度
+緯度
