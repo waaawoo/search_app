@@ -10,14 +10,19 @@ class App extends Component{
     };
   }
 
+  // 関数作成
+  handlePlaceSubmit(place){
+    console.log(place);
+  }
+
   // viewに表示させる記述
   render(){
     return (
     <div>
       <h1>緯度経度検索</h1>
 
-      {/* importしたcomponentを出力 */}
-      <SearchForm/>
+      {/* importしたcomponentを出力 onClickイベントを設置 */}
+      <SearchForm onSubmit={place => this.handlePlaceSubmit(place) } />
     </div>
     );
   }
