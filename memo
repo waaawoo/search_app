@@ -19,3 +19,7 @@ rootに.envファイルを作成し
 
 コードで呼び出すときは
 const 定数名 = process.env.環境変数名
+
+GoogleMap表示用ライブラリ
+yarn add react-google-maps
+で導入

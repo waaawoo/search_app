@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-
 import axios from 'axios';
 
 // form部分のcomponentの呼び出し
 import SearchForm from './SearchForm';
 import Result from './Result';
+// import Map from './Map';
+
 
 // マップAPIURL
 const GEOCODE_ENDPOINT = 'https://maps.googleapis.com/maps/api/geocode/json'
@@ -85,6 +86,8 @@ class App extends Component{
         lng={this.state.lng}
       />
 
+      {/* Map */}
+      {/* <Map lat={this.state.lat} lng={this.state.lng} /> */}
     </div>
     );
   }
