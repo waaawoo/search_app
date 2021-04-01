@@ -5,7 +5,7 @@ import axios from 'axios';
 import SearchForm from './SearchForm';
 import Result from './Result';
 // import Map from './Map';
-
+// import HotelTable from 'HotelTable'
 
 // マップAPIURL
 const GEOCODE_ENDPOINT = 'https://maps.googleapis.com/maps/api/geocode/json'
@@ -86,6 +86,8 @@ class App extends Component{
         lng={this.state.lng}
       />
 
+      {/* ホテル検索 */}
+      {/* <HotelTable hotels={this.state.hotels} /> */}
       {/* Map */}
       {/* <Map lat={this.state.lat} lng={this.state.lng} /> */}
     </div>
